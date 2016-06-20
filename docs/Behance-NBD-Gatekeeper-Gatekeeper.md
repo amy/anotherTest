@@ -1,7 +1,7 @@
 Behance\NBD\Gatekeeper\Gatekeeper
 ===============
 
-blah 1
+
 
 
 
@@ -20,10 +20,10 @@ Properties
 ### $_ruleset_provider
 
 ```
-private \Behance\NBD\Gatekeeper\RulesetProviderInterface $_ruleset_provider
+private \Behance\NBD\Gatekeeper\RulesetProviderInterfaceTESTTESTTEST2 $_ruleset_provider
 ```
 
-blah 2
+
 
 
 
@@ -40,7 +40,7 @@ Methods
 mixed Behance\NBD\Gatekeeper\Gatekeeper::\Behance\NBD\Gatekeeper\Gatekeeper::__construct()(\Behance\NBD\Gatekeeper\RulesetProviderInterface $ruleset_provider)
 ```
 
-blah 3
+
 
 
 
@@ -67,6 +67,61 @@ boolean Behance\NBD\Gatekeeper\Gatekeeper::\Behance\NBD\Gatekeeper\Gatekeeper::c
 #### Arguments
 
 * $feature **string**
+* $identifier **string|array|null**
+
+
+
+### \Behance\NBD\Gatekeeper\Gatekeeper::getActiveFeatures()
+
+```
+array Behance\NBD\Gatekeeper\Gatekeeper::\Behance\NBD\Gatekeeper\Gatekeeper::getActiveFeatures()(string|array|null $identifier)
+```
+
+
+
+
+
+* Visibility: **public**
+
+#### Arguments
+
+* $identifier **string|array|null**
+
+
+
+### \Behance\NBD\Gatekeeper\Gatekeeper::getPercentageFeaturesByActiveState()
+
+```
+array Behance\NBD\Gatekeeper\Gatekeeper::\Behance\NBD\Gatekeeper\Gatekeeper::getPercentageFeaturesByActiveState()(string|array|null $identifier)
+```
+
+
+
+
+
+* Visibility: **public**
+
+#### Arguments
+
+* $identifier **string|array|null**
+
+
+
+### \Behance\NBD\Gatekeeper\Gatekeeper::_getRuleTypeFeaturesByActiveState()
+
+```
+array Behance\NBD\Gatekeeper\Gatekeeper::\Behance\NBD\Gatekeeper\Gatekeeper::_getRuleTypeFeaturesByActiveState()(string $rule_type, string|array|null $identifier)
+```
+
+
+
+
+
+* Visibility: **private**
+
+#### Arguments
+
+* $rule_type **string**
 * $identifier **string|array|null**
 
 
