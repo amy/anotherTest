@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project title="API Documentation" version="2.8.5">
+  <partials/>
+  <file path="Gatekeeper.php" generated-path="Gatekeeper.html" hash="50b622196d44192105d298961a07f663" package="Default">
+    <docblock line="0">
+      <description></description>
+      <long-description></long-description>
+      <tag name="package" line="0" description="Default"/>
+    </docblock>
+    <namespace-alias name="PercentageRule">\Behance\NBD\Gatekeeper\Rules\PercentageRule</namespace-alias>
+    <class final="false" abstract="false" namespace="Behance\NBD\Gatekeeper" line="7" package="Default">
+      <extends/>
+      <name>Gatekeeper</name>
+      <full_name>\Behance\NBD\Gatekeeper\Gatekeeper</full_name>
+      <docblock line="7">
+        <description></description>
+        <long-description></long-description>
+        <tag name="package" line="7" description="Default"/>
+      </docblock>
+      <property static="false" visibility="private" namespace="Behance\NBD\Gatekeeper" line="12" package="Default">
+        <name>$_ruleset_provider</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::_ruleset_provider</full_name>
+        <default></default>
+        <docblock line="12">
+          <description></description>
+          <long-description></long-description>
+          <tag name="var" line="12" description="" type="\Behance\NBD\Gatekeeper\RulesetProviderInterfaceTESTTESTTEST3" variable="">
+            <type>\Behance\NBD\Gatekeeper\RulesetProviderInterfaceTESTTESTTEST3</type>
+          </tag>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Behance\NBD\Gatekeeper" line="18" package="Default">
+        <name>__construct</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::__construct()</full_name>
+        <docblock line="18">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="18" description="" type="\Behance\NBD\Gatekeeper\RulesetProviderInterface" variable="$ruleset_provider">
+            <type>\Behance\NBD\Gatekeeper\RulesetProviderInterface</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$ruleset_provider</name>
+          <default></default>
+          <type>\Behance\NBD\Gatekeeper\RulesetProviderInterface</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Behance\NBD\Gatekeeper" line="30" package="Default">
+        <name>canAccess</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::canAccess()</full_name>
+        <docblock line="30">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="30" description="" type="string" variable="$feature">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="30" description="" type="string|array|null" variable="$identifier">
+            <type>string</type>
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="return" line="30" description="" type="boolean">
+            <type>boolean</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$feature</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$identifier</name>
+          <default>null</default>
+          <type>string|array|null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Behance\NBD\Gatekeeper" line="51" package="Default">
+        <name>getActiveFeatures</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::getActiveFeatures()</full_name>
+        <docblock line="51">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="51" description="" type="string|array|null" variable="$identifier">
+            <type>string</type>
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="return" line="51" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$identifier</name>
+          <default>null</default>
+          <type>string|array|null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="Behance\NBD\Gatekeeper" line="64" package="Default">
+        <name>getPercentageFeaturesByActiveState</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::getPercentageFeaturesByActiveState()</full_name>
+        <docblock line="64">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="64" description="" type="string|array|null" variable="$identifier">
+            <type>string</type>
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="return" line="64" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$identifier</name>
+          <default>null</default>
+          <type>string|array|null</type>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="private" namespace="Behance\NBD\Gatekeeper" line="76" package="Default">
+        <name>_getRuleTypeFeaturesByActiveState</name>
+        <full_name>\Behance\NBD\Gatekeeper\Gatekeeper::_getRuleTypeFeaturesByActiveState()</full_name>
+        <docblock line="76">
+          <description></description>
+          <long-description></long-description>
+          <tag name="param" line="76" description="" type="string" variable="$rule_type">
+            <type>string</type>
+          </tag>
+          <tag name="param" line="76" description="" type="string|array|null" variable="$identifier">
+            <type>string</type>
+            <type>array</type>
+            <type>null</type>
+          </tag>
+          <tag name="return" line="76" description="" type="array">
+            <type>array</type>
+          </tag>
+        </docblock>
+        <argument line="0" by_reference="false">
+          <name>$rule_type</name>
+          <default></default>
+          <type>string</type>
+        </argument>
+        <argument line="0" by_reference="false">
+          <name>$identifier</name>
+          <default>null</default>
+          <type>string|array|null</type>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="PPC:ERR-50000">No summary was found for this file</error>
+      <error line="7" code="PPC:ERR-50005">No summary for class \Behance\NBD\Gatekeeper\Gatekeeper</error>
+      <error line="18" code="PPC:ERR-50008">No summary for method __construct()</error>
+      <error line="30" code="PPC:ERR-50008">No summary for method canAccess()</error>
+      <error line="51" code="PPC:ERR-50008">No summary for method getActiveFeatures()</error>
+      <error line="64" code="PPC:ERR-50008">No summary for method getPercentageFeaturesByActiveState()</error>
+      <error line="76" code="PPC:ERR-50008">No summary for method _getRuleTypeFeaturesByActiveState()</error>
+      <error line="12" code="PPC:ERR-50007">No summary for property $_ruleset_provider</error>
+    </parse_markers>
+    <source>eJytVVFv2jAQfvevuIc8EFTEw95gpQONTZO2rmrpE6DI9S4QLTiR7SChtv99TuLECUkIk4pEFLDv++6+O3/+fBfvY0I4PaCMKUNY4J5yhpv7xdfNd6rwL2KMYkpIIrsWN49JiHLzgIIhV3SH6W8dwUIqJdh98EoIwHg41E8YwpcjFbC5BInqQUTH4A+KH1yh8HV+q+XTqvh+ynDG+hmL4KhjwfFEHufFJlCnUeOMqaCH/2YF5xzXUicvYcDATzhTQcTB81jEpRIJUwO4Hg/cXB0AR+0DOZo1KoHbZtQ0DXmH8bhK21Yw6KWA78DxkapEYNviGxWCnt54EobgaHSuAj8wlZr9AnUwh5coCjsFYJTPGUMpByXbTRVP15FR2IJrawMIpJdlMqituOBmu+ufu/NMzz4TWNdQttOc048EUraHOgeV4EitRIhejfnVIAd+GtDRn9Fsh8o03JYO7mhWVaQN3hIAGIV1I/UJyv96J/mTVNZ9Gkq03S8ZLvT++vZmGzv7q6uc67cjfssrlIOL3a1ien4Q6hPQo2GJ696UrFZQL7UqDZ/a0fmEFDIaTsPSMpAZSH0q3Vzu9/SlkLVRapu8H66u9dGCdnHK03hS2qqukrsQ2Izk6hR3gdVdezJ5fP659O7nv5YNeSqq9KTYLVP1bGZu5imd2kfqaW4C68f9EthEeoyqmB6ZxnkHGust6+20tihtgbfXznnTlEqw1JJKKykSgfIm6ONo8aNpgZG7mQkbzfZUprt/+6lSVVHOHKqpwtqib21CvfeAaw3OHD09XIUGfuXE2aluUFcuwL4+E5Lts7c9+QeELN+t</source>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="global" full_name="global"/>
+  <namespace name="Behance" full_name="Behance">
+    <namespace name="NBD" full_name="Behance\NBD">
+      <namespace name="Gatekeeper" full_name="Behance\NBD\Gatekeeper"/>
+    </namespace>
+  </namespace>
+  <deprecated count="0"/>
+</project>
